@@ -1,22 +1,29 @@
-body{
-    padding-top: 300px;
-     /* background: url("/static/images/reg.jpg"); */
+/* General styles */
+body {
+    padding-top: 10%; /* Using percentage for padding-top */
+    background: rgb(216, 209, 209); /* Setting background color */
     background-size: cover;
     background-repeat: no-repeat;
-    background: rgb(216, 209, 209);
+    /* Uncomment the line below to add a background image */
+    /* background: url("/static/images/reg.jpg"); */
 }
 
-
-.form-signup{
+/* Form styles */
+.form-signup {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 80%; /* Using percentage for maximum width */
     background-color: white;
     padding: 15px;
+    border-radius: 8px; /* Adding border radius for better appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow for depth */
 }
-.form-signup h2{
+
+.form-signup h2 {
     text-align: center;
 }
-.btn1{
+
+/* Button styles */
+.btn1 {
     border: none;
     outline: none;
     height: 50px;
@@ -25,8 +32,10 @@ body{
     color: white;
     border-radius: 4px;
     font-weight: bold;
-
+    cursor: pointer; /* Adding cursor pointer on hoverable elements */
+    transition: background-color 0.3s ease; /* Adding transition for smooth hover effect */
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: rgb(116, 90, 90);
 }
