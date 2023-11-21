@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: lightgray;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding to create space around the content */
+  }
+  
+  .apply_box {
+    max-width: 650px;
+    padding: 30px; /* Increase padding for better spacing */
+    background: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 8px rgba(1, 1, 1, 0.15); /* Adjust box-shadow */
+    border-radius: 15px; /* Rounder corners */
+  }
+  
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  h1 a:hover {
+    color: blue;
+  }
+  
+  .title_small {
+    font-size: 18px; /* Slightly larger font size */
+  }
+  
+  /* Additional styles for form elements */
+  
+  .form_container {
+    margin-top: 30px; /* Increase top margin for better separation */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Increase gap between form controls */
+  }
+  
+  .form_control {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-size: 16px; /* Adjust label font size */
+    margin-bottom: 8px; /* Increase margin below labels */
+    font-weight: 600; /* Bolder font weight */
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 8px 12px; /* Slightly larger padding for better input spacing */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 8px; /* Rounder corners */
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline-color: blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Highlight on focus */
+  }
+  
+  /* Button styles */
+  
+  .button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px; /* Increase top margin for better separation */
+  }
+  
+  button {
+    background: orangered;
+    color: #fff;
+    padding: 12px 24px; /* Slightly larger padding for buttons */
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff5722; /* Darker shade on hover */
+    transition: background-color 0.3s ease;
+  }
+  
+  .textarea_control textarea {
+    width: 100%;
+    min-height: 100px; /* Set a minimum height for textareas */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 460px) {
+    .textarea_control {
+      grid-column: 1 / span 1;
+    }
+  }
+  
